@@ -9,6 +9,8 @@ src/main/java/org/openapitools/api/FakeApi.java
 src/main/java/org/openapitools/api/FakeApiController.java
 src/main/java/org/openapitools/api/FakeClassnameTestApi.java
 src/main/java/org/openapitools/api/FakeClassnameTestApiController.java
+src/main/java/org/openapitools/api/IssueApi.java
+src/main/java/org/openapitools/api/IssueApiController.java
 src/main/java/org/openapitools/api/PetApi.java
 src/main/java/org/openapitools/api/PetApiController.java
 src/main/java/org/openapitools/api/StoreApi.java

@@ -18,6 +18,25 @@ tags:
 schemes:
   - http
 paths:
+  /issue:
+    post:
+      operationId: reproduceIssue
+      consumes:
+        - application/x-www-form-urlencoded
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: "object"
+            properties:
+              listOfStrings:
+                type: "array"
+                items:
+                  type: "string"
+      responses:
+        '200':
+          description: successful operation
+
   /pet:
     post:
       tags:

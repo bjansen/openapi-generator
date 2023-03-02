@@ -18,6 +18,26 @@ tags:
 - description: Operations about user
   name: user
 paths:
+  /issue:
+    post:
+      operationId: reproduceIssue
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/reproduceIssue_request'
+        required: false
+      responses:
+        "200":
+          content: {}
+          description: successful operation
+      tags:
+      - pet
+      x-codegen-request-body-name: body
+      x-content-type: application/x-www-form-urlencoded
+      x-accepts: application/json
+      x-tags:
+      - tag: pet
   /pet:
     post:
       operationId: addPet
@@ -2095,6 +2115,13 @@ components:
       xml:
         namespace: http://a.com/schema
         prefix: pre
+    reproduceIssue_request:
+      properties:
+        listOfStrings:
+          items:
+            type: string
+          type: array
+      type: object
     updatePetWithForm_request:
       properties:
         name:
